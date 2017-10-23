@@ -27,6 +27,7 @@
     "pretest": "npm run compile",
     "test": "testem",
     "compile": "tsc",
+    "postinstall": "npm run compile",
     "prepublish": "npm run compile",
     "release-major": "xyz --repo git@github.com:paldepind/snabbdom.git --increment major",
     "release-minor": "xyz --repo git@github.com:paldepind/snabbdom.git --increment minor",
