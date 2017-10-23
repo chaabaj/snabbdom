@@ -37,7 +37,8 @@ function insertBefore(parentNode: Node, newNode: Node, referenceNode: Node | nul
 }
 
 function removeChild(node: Node, child: Node): void {
-  node.removeChild(child);
+  if (node)
+    node.removeChild(child);
 }
 
 function appendChild(node: Node, child: Node): void {
